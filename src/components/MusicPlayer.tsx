@@ -1,11 +1,12 @@
 import { useState, useRef, useEffect } from 'react';
+import { asset } from '../assets';
 
 const tracks = [
-  { name: 'Main Theme', file: '/music/Main Theme.mp3' },
-  { name: 'Shop Theme', file: '/music/Shop Theme.mp3' },
-  { name: 'Arcana Theme', file: '/music/Arcana Theme.mp3' },
-  { name: 'Celestial Theme', file: '/music/Celestial Theme.mp3' },
-  { name: 'Boss Theme', file: '/music/Boss Theme.mp3' },
+  { name: 'Main Theme', file: asset('/music/Main Theme.mp3') },
+  { name: 'Shop Theme', file: asset('/music/Shop Theme.mp3') },
+  { name: 'Arcana Theme', file: asset('/music/Arcana Theme.mp3') },
+  { name: 'Celestial Theme', file: asset('/music/Celestial Theme.mp3') },
+  { name: 'Boss Theme', file: asset('/music/Boss Theme.mp3') },
 ];
 
 export default function MusicPlayer() {

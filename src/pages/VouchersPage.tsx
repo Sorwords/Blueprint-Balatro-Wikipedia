@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useI18n } from '../i18n/I18nContext';
 import { useData } from '../data/useData';
+import { asset } from '../assets';
 
 const voucherBaseNames: Record<string, string> = {
   'Liquidation Plus': 'Liquidation',
@@ -15,12 +16,12 @@ const voucherBaseNames: Record<string, string> = {
 
 function voucherImage(name: string): string {
   const filename = name.replace(/\s+/g, '_');
-  return `/images/vouchers/${filename}.png`;
+  return asset(`/images/vouchers/${filename}.png`);
 }
 
 function voucherImageFallback(name: string): string {
   const base = voucherBaseNames[name];
-  if (base) return `/images/vouchers/${base}.png`;
+  if (base) return asset(`/images/vouchers/${base}.png`);
   return '';
 }
 

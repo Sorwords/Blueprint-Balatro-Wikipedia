@@ -1,8 +1,9 @@
 import { useI18n } from '../i18n/I18nContext';
 import { useData } from '../data/useData';
+import { asset } from '../assets';
 
 function editionImage(name: string): string {
-  return `/images/editions/${name}.png`;
+  return asset(`/images/editions/${name}.png`);
 }
 
 export default function EditionsPage() {

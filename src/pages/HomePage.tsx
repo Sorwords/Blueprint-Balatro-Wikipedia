@@ -1,5 +1,6 @@
 import { useI18n } from '../i18n/I18nContext';
 import { useData } from '../data/useData';
+import { asset } from '../assets';
 
 type Page = 'home' | 'jokers' | 'tarot' | 'planets' | 'spectral' | 'vouchers' | 'blinds' | 'enhancements' | 'editions' | 'calculator';
 
@@ -19,12 +20,12 @@ const pageMap: Record<string, Page> = {
 };
 
 const featured = [
-  { name: 'Triboulet', img: '/images/Triboulet.png' },
-  { name: 'Perkeo', img: '/images/Perkeo.png' },
-  { name: 'Canio', img: '/images/Canio.png' },
-  { name: 'Yorick', img: '/images/Yorick.png' },
-  { name: 'Chicot', img: '/images/Chicot.png' },
-  { name: 'Joker', img: '/images/Joker.png' },
+  { name: 'Triboulet', img: asset('/images/Triboulet.png') },
+  { name: 'Perkeo', img: asset('/images/Perkeo.png') },
+  { name: 'Canio', img: asset('/images/Canio.png') },
+  { name: 'Yorick', img: asset('/images/Yorick.png') },
+  { name: 'Chicot', img: asset('/images/Chicot.png') },
+  { name: 'Joker', img: asset('/images/Joker.png') },
 ];
 
 export default function HomePage({ onNavigate }: HomePageProps) {
@@ -40,7 +41,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
         marginBottom: '32px',
         textAlign: 'center',
       }}>
-        <img src="/images/logo.png" alt="Balatro" style={{ maxWidth: '320px', height: 'auto', marginBottom: '12px', imageRendering: 'auto' }} />
+        <img src={asset('/images/logo.png')} alt="Balatro" style={{ maxWidth: '320px', height: 'auto', marginBottom: '12px', imageRendering: 'auto' }} />
         <div className="page-subtitle" style={{ fontSize: '0.7rem' }}>
           {t('home.subtitle')}
         </div>
@@ -82,7 +83,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
               onClick={() => onNavigate(pageMap[cat.id])}
             >
               {cat.image ? (
-                <img src={cat.image} alt={cat.name} className="category-img"
+                <img src={asset(cat.image)} alt={cat.name} className="category-img"
                   onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
                 />
               ) : (

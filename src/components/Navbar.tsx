@@ -1,5 +1,6 @@
 import { useData } from '../data/useData';
 import { useI18n } from '../i18n/I18nContext';
+import { asset } from '../assets';
 
 type Page = 'home' | 'jokers' | 'tarot' | 'planets' | 'spectral' | 'vouchers' | 'blinds' | 'enhancements' | 'editions' | 'calculator' | 'achievements' | 'synergy' | 'blindcalc';
 
@@ -25,7 +26,7 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
   return (
     <nav className="sidebar">
       <div className="sidebar-header">
-        <img src="/images/logo.png" alt="Balatro" className="sidebar-logo-img" />
+        <img src={asset('/images/logo.png')} alt="Balatro" className="sidebar-logo-img" />
         <div className="sidebar-subtitle">Wiki &mdash; {t('nav.enciclopedia')}</div>
       </div>
 
@@ -54,7 +55,7 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
             onKeyDown={(e) => e.key === 'Enter' && onNavigate(page)}
           >
             {cat.image ? (
-              <img src={cat.image} alt="" className="nav-img" onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }} />
+              <img src={asset(cat.image)} alt="" className="nav-img" onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }} />
             ) : (
               <span className="nav-icon" style={{ fontSize: '0.8rem', color: 'var(--gold-dim)' }}>◈</span>
             )}

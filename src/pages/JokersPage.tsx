@@ -1,13 +1,14 @@
 import { useState } from 'react';
 import { useI18n } from '../i18n/I18nContext';
 import { useData } from '../data/useData';
+import { asset } from '../assets';
 
 const rarities = ['all', 'common', 'uncommon', 'rare', 'legendary'] as const;
 
 function jokerImageUrl(joker: { image?: string; name: string }): string {
-  if (joker.image) return `/images/${joker.image}`;
+  if (joker.image) return asset(`/images/${joker.image}`);
   const filename = joker.name.replace(/\s+/g, '_').replace(/['']/g, '');
-  return `/images/${filename}.png`;
+  return asset(`/images/${filename}.png`);
 }
 
 export default function JokersPage() {

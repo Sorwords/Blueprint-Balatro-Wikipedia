@@ -1,8 +1,9 @@
 import { useI18n } from '../i18n/I18nContext';
 import { useData } from '../data/useData';
+import { asset } from '../assets';
 
 function tarotImage(name: string): string {
-  return `/images/tarot/${name.replace(/\s+/g, '_')}.png`;
+  return asset(`/images/tarot/${name.replace(/\s+/g, '_')}.png`);
 }
 
 export default function TarotPage() {

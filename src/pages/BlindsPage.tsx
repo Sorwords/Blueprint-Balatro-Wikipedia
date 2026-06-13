@@ -1,8 +1,9 @@
 import { useI18n } from '../i18n/I18nContext';
 import { useData } from '../data/useData';
+import { asset } from '../assets';
 
 function blindImage(name: string): string {
-  return `/images/blinds/${name.replace(/\s+/g, '_')}.gif`;
+  return asset(`/images/blinds/${name.replace(/\s+/g, '_')}.gif`);
 }
 
 export default function BlindsPage() {

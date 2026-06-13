@@ -1,5 +1,6 @@
 import { useI18n } from '../i18n/I18nContext';
 import { useData } from '../data/useData';
+import { asset } from '../assets';
 
 const spectralImageOverrides: Record<string, string> = {
   Soul: 'The_Soul',
@@ -8,7 +9,7 @@ const spectralImageOverrides: Record<string, string> = {
 
 function spectralImage(name: string): string {
   const override = spectralImageOverrides[name];
-  return `/images/spectral/${override || name.replace(/\s+/g, '_')}.png`;
+  return asset(`/images/spectral/${override || name.replace(/\s+/g, '_')}.png`);
 }
 
 export default function SpectralPage() {

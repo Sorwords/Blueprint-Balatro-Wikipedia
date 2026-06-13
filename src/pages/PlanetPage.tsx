@@ -1,5 +1,6 @@
 import { useI18n } from '../i18n/I18nContext';
 import { useData } from '../data/useData';
+import { asset } from '../assets';
 
 const handKeys: Record<string, string> = {
   Mercury: 'pair',
@@ -52,7 +53,7 @@ const planetImageOverrides: Record<string, string> = {
 
 function planetImage(name: string): string {
   const override = planetImageOverrides[name];
-  return `/images/planets/${override || name}.png`;
+  return asset(`/images/planets/${override || name}.png`);
 }
 
 export default function PlanetPage() {

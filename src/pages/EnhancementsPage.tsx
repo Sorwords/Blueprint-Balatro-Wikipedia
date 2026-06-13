@@ -1,8 +1,9 @@
 import { useI18n } from '../i18n/I18nContext';
 import { useData } from '../data/useData';
+import { asset } from '../assets';
 
 function enhancementImage(name: string): string {
-  return `/images/enhancements/${name}.png`;
+  return asset(`/images/enhancements/${name}.png`);
 }
 
 export default function EnhancementsPage() {

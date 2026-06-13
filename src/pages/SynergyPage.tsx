@@ -2,13 +2,14 @@ import { useState, useMemo } from 'react';
 import { useData } from '../data/useData';
 import { analyzeSynergy } from '../data/synergy';
 import { useI18n } from '../i18n/I18nContext';
+import { asset } from '../assets';
 
 const MAX_SELECTED = 5;
 
 function jokerImageUrl(name: string, image?: string): string {
-  if (image) return `/images/${image}`;
+  if (image) return asset(`/images/${image}`);
   const filename = name.replace(/\s+/g, '_').replace(/['']/g, '');
-  return `/images/${filename}.png`;
+  return asset(`/images/${filename}.png`);
 }
 
 export default function SynergyPage() {
