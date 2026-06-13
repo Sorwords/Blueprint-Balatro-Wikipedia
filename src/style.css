@@ -47,7 +47,7 @@ img {
 }
 
 html {
-  font-size: 20px;
+  font-size: 22px;
 }
 
 body {
@@ -132,14 +132,14 @@ body {
 }
 
 .sidebar-subtitle {
-  font-size: 0.6rem;
+  font-size: 0.85rem;
   color: var(--text-dim);
   letter-spacing: 3px;
   text-transform: uppercase;
 }
 
 .sidebar-section-title {
-  font-size: 0.55rem;
+  font-size: 0.75rem;
   color: var(--gold-dim);
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -154,7 +154,7 @@ body {
   padding: 10px 20px;
   color: var(--text);
   text-decoration: none;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   transition: all 0.15s;
   border-left: 3px solid transparent;
   position: relative;
@@ -189,7 +189,7 @@ body {
   border-radius: 4px;
   color: var(--text-dim);
   font-family: var(--font-main);
-  font-size: 0.6rem;
+  font-size: 0.85rem;
   padding: 8px 0;
   cursor: pointer;
   text-transform: uppercase;
@@ -269,7 +269,7 @@ body {
 }
 
 .page-subtitle {
-  font-size: 0.65rem;
+  font-size: 0.75rem;
   color: var(--text-dim);
   letter-spacing: 1px;
 }
@@ -363,7 +363,7 @@ body {
 .card-name .rarity-tag.legendary { color: var(--rarity-legendary); }
 
 .card-effect {
-  font-size: 0.65rem;
+  font-size: 0.75rem;
   color: var(--text-dim);
   margin-bottom: 10px;
   line-height: 1.5;
@@ -378,7 +378,7 @@ body {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
-  font-size: 0.55rem;
+  font-size: 0.75rem;
   color: var(--text-dim);
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -399,7 +399,7 @@ body {
 }
 
 .card-flavor {
-  font-size: 0.6rem;
+  font-size: 0.85rem;
   color: var(--text-dim);
   font-style: italic;
   margin-top: 10px;
@@ -423,7 +423,7 @@ body {
 }
 
 .stat-label {
-  font-size: 0.55rem;
+  font-size: 0.75rem;
   color: var(--gold-dim);
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -455,7 +455,7 @@ body {
 }
 
 .home-section p {
-  font-size: 0.7rem;
+  font-size: 0.85rem;
   color: var(--text);
   line-height: 1.7;
   margin-bottom: 10px;
@@ -512,7 +512,7 @@ body {
 }
 
 .category-count {
-  font-size: 0.6rem;
+  font-size: 0.85rem;
   color: var(--text-dim);
 }
 
@@ -520,7 +520,7 @@ body {
   display: flex;
   gap: 10px;
   align-items: center;
-  font-size: 0.6rem;
+  font-size: 0.85rem;
   color: var(--text-dim);
   margin-top: 6px;
 }
@@ -755,7 +755,7 @@ body {
   border-radius: 4px;
   padding: 8px 14px;
   font-family: var(--font-main);
-  font-size: 0.65rem;
+  font-size: 0.75rem;
   color: var(--text-dim);
   cursor: pointer;
   transition: all 0.15s;
@@ -802,7 +802,7 @@ body {
 }
 
 .footer-title {
-  font-size: 0.7rem;
+  font-size: 0.85rem;
   color: var(--gold);
   letter-spacing: 1px;
   margin-bottom: 6px;
@@ -810,7 +810,7 @@ body {
 }
 
 .footer-text {
-  font-size: 0.55rem;
+  font-size: 0.75rem;
   color: var(--text-dim);
   line-height: 1.6;
 }
@@ -894,7 +894,7 @@ body {
 }
 
 .music-track-name {
-  font-size: 0.7rem;
+  font-size: 0.85rem;
   color: var(--gold);
   text-align: center;
   margin-bottom: 8px;
@@ -1112,7 +1112,7 @@ body {
 }
 
 .synergy-item-name {
-  font-size: 0.6rem;
+  font-size: 0.85rem;
   color: var(--white);
   margin-bottom: 2px;
 }
@@ -1155,7 +1155,7 @@ body {
 }
 
 .synergy-empty-sub {
-  font-size: 0.6rem;
+  font-size: 0.85rem;
   color: var(--text-dim);
 }
 
@@ -1175,12 +1175,12 @@ body {
   border: 1px solid var(--border-gold);
   border-radius: 3px;
   padding: 4px 10px;
-  font-size: 0.55rem;
+  font-size: 0.75rem;
   color: var(--gold);
 }
 
 .synergy-warning {
-  font-size: 0.6rem;
+  font-size: 0.85rem;
   color: var(--orange);
   margin-top: 6px;
   padding: 6px 10px;
@@ -1238,7 +1238,7 @@ body {
 }
 
 .synergy-rec-name {
-  font-size: 0.6rem;
+  font-size: 0.85rem;
   color: var(--white);
   margin-bottom: 2px;
 }
@@ -1278,7 +1278,7 @@ body {
 }
 
 .blind-control-group label {
-  font-size: 0.65rem;
+  font-size: 0.75rem;
   color: var(--gold-dim);
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -1324,7 +1324,7 @@ body {
   border-radius: 4px;
   padding: 10px 14px;
   font-family: var(--font-main);
-  font-size: 0.7rem;
+  font-size: 0.85rem;
   min-width: 160px;
   cursor: pointer;
 }
@@ -1366,7 +1366,7 @@ body {
   padding: 12px 16px;
   background: rgba(0,0,0,0.3);
   border-radius: 4px;
-  font-size: 0.6rem;
+  font-size: 0.85rem;
   color: var(--text-dim);
 }
 
@@ -1381,7 +1381,7 @@ body {
 .blind-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.7rem;
+  font-size: 0.85rem;
 }
 
 .blind-table th {
@@ -1390,7 +1390,7 @@ body {
   color: var(--gold-dim);
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 0.6rem;
+  font-size: 0.85rem;
   border-bottom: 2px solid var(--border-gold);
 }
 
@@ -1442,7 +1442,7 @@ body {
   border-radius: 4px;
   color: var(--text-dim);
   font-family: var(--font-main);
-  font-size: 0.6rem;
+  font-size: 0.85rem;
   padding: 8px 20px;
   cursor: pointer;
   transition: all 0.15s;
@@ -1460,7 +1460,7 @@ body {
   margin-top: 24px;
   padding: 16px 20px;
   border-radius: 4px;
-  font-size: 0.7rem;
+  font-size: 0.85rem;
 }
 
 .blind-estimate.reachable {
@@ -1502,7 +1502,7 @@ body {
 
 @media (max-width: 768px) {
   html {
-    font-size: 17px;
+    font-size: 19px;
   }
   .main-content {
     margin-left: 0;
@@ -1683,7 +1683,7 @@ body {
 
 @media (max-width: 480px) {
   html {
-    font-size: 16px;
+    font-size: 18px;
   }
   .main-content {
     padding: 12px;
