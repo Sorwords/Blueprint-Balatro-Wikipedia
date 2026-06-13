@@ -25,7 +25,7 @@ export default function Footer() {
         <div className="footer-section">
           <div className="footer-title">Social Media</div>
           <div className="footer-text">
-            <a href="https://twitter.com/Playstack" target="_blank" rel="noopener noreferrer">Playstack on Twitter</a>
+            <a href="https://x.com/PlaystackGames" target="_blank" rel="noopener noreferrer">Playstack on X</a>
           </div>
           <div className="footer-text">
             <a href="https://twitter.com/localThunk" target="_blank" rel="noopener noreferrer">LocalThunk on Twitter</a>
