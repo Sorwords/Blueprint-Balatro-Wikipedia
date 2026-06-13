@@ -41,7 +41,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
         marginBottom: '32px',
         textAlign: 'center',
       }}>
-        <img src={asset('/images/logo.png')} alt="Balatro" style={{ maxWidth: '320px', height: 'auto', marginBottom: '12px', imageRendering: 'auto' }} />
+        <img src={asset('/images/logo.png')} alt="Balatro" className="home-logo" />
         <div className="page-subtitle" style={{ fontSize: '0.7rem' }}>
           {t('home.subtitle')}
         </div>
