@@ -7,6 +7,7 @@ type Page = 'home' | 'jokers' | 'tarot' | 'planets' | 'spectral' | 'vouchers' | 
 interface NavbarProps {
   currentPage: Page;
   onNavigate: (page: Page) => void;
+  sidebarOpen?: boolean;
 }
 
 const pageMap: Record<string, Page> = {
@@ -20,11 +21,11 @@ const pageMap: Record<string, Page> = {
   editions: 'editions',
 };
 
-export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
+export default function Navbar({ currentPage, onNavigate, sidebarOpen }: NavbarProps) {
   const { t, lang, setLang } = useI18n();
   const { categories } = useData();
   return (
-    <nav className="sidebar">
+    <nav className={`sidebar${sidebarOpen ? ' open' : ''}`}>
       <div className="sidebar-header">
         <img src={asset('/images/logo.png')} alt="Balatro" className="sidebar-logo-img" />
         <div className="sidebar-subtitle">Wiki &mdash; {t('nav.enciclopedia')}</div>

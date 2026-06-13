@@ -21,10 +21,16 @@ type Page = 'home' | 'jokers' | 'tarot' | 'planets' | 'spectral' | 'vouchers' | 
 
 export default function App() {
   const [page, setPage] = useState<Page>('home');
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  const handleNavigate = (p: Page) => {
+    setPage(p);
+    setSidebarOpen(false);
+  };
 
   const renderPage = () => {
     switch (page) {
-      case 'home': return <HomePage onNavigate={setPage} />;
+      case 'home': return <HomePage onNavigate={handleNavigate} />;
       case 'jokers': return <JokersPage />;
       case 'tarot': return <TarotPage />;
       case 'planets': return <PlanetPage />;
@@ -37,12 +43,13 @@ export default function App() {
       case 'achievements': return <AchievementsPage />;
       case 'synergy': return <SynergyPage />;
       case 'blindcalc': return <BlindCalculatorPage />;
-      default: return <HomePage onNavigate={setPage} />;
+      default: return <HomePage onNavigate={handleNavigate} />;
     }
   };
 
   return (
     <div className="app-layout">
+      <div className={`sidebar-overlay ${sidebarOpen ? 'visible' : ''}`} onClick={() => setSidebarOpen(false)} />
       <div className="balatro-bg">
         <Balatro
           color1="#1a0f00"
@@ -56,7 +63,12 @@ export default function App() {
           mouseInteraction={true}
         />
       </div>
-      <Navbar currentPage={page} onNavigate={setPage} />
+      <Navbar currentPage={page} onNavigate={handleNavigate} sidebarOpen={sidebarOpen} />
+      <button className="hamburger" onClick={() => setSidebarOpen(!sidebarOpen)} aria-label="Toggle menu">
+        <span />
+        <span />
+        <span />
+      </button>
       <main className="main-content">
         {renderPage()}
         <Footer />
